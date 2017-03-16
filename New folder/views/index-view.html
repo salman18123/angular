@@ -1,0 +1,34 @@
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview" ng-repeat="now in main.data.rounds">
+                    
+                        <h2 class="post-title" style="color:red" class="text-center">
+                            {{now.name}}
+                        </h2><hr style="color:red">
+                        <h3 class="post-subtitle" ng-repeat="matches in now.matches">
+                             Date-{{matches.date}}<hr>
+                              <p style="color:violet" > {{matches.team1.name}} <span style="background-color: red" >{{matches.score1}} - {{matches.score2}}</span> {{matches.team2.name}}</p><hr>
+                    
+                        </h3>
+                    
+                   
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/data">Info of matches &rarr;</a>
+                    </li>
+                    <li class="next">
+                        <a href="#/stats">Team Statistics&rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>

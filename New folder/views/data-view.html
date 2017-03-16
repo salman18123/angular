@@ -1,0 +1,24 @@
+<div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview" ng-repeat="now in main.data.rounds">
+                    
+                        <h2 class="post-title" style="color:red" class="text-center">
+                            {{now.name}}
+                        </h2><hr style="color:red">
+                        <h3 class="post-subtitle" ng-repeat="matches in now.matches">
+                             The match was held on-{{matches.date}}<hr>
+                              <p style="color:violet" >This match was between {{matches.team1.name}} and {{matches.team2.name}}. <hr>{{matches.team1.name}} score was {{matches.score1}} And {{matches.team2.name}} score was {{matches.score2}}.</p><hr><hr>
+                    
+                        </h3>
+
+                        <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Go Back &rarr;</a>
+                    </li>
+                    
+                </ul>
+                    
+                   
+                </div>
+                <hr>

@@ -1,0 +1,35 @@
+  <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-preview" ng-repeat="team in teams.team">
+                    
+                        <h2 class="post-title" style="color:red" class="text-center">
+                            {{team.name}}
+                        </h2>
+                        <h3 class="post-subtitle" >
+                            <a ng-href="#" id="{{team.id}}">Team Stats</a>
+                        </h3>
+                        <section id="sub">
+                            <p>The matches played are <span id="4"></span></p>
+                            <p>Total goals are <span id="5"></span></p>
+                            <p>Total wins are <span id="6"></span></p>
+                            <p>Total losses  are <span id="7"></span></p>
+                            <p>The draws are <span id="8"></span></p>
+
+                        </section>
+                         <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Go Back &rarr;</a>
+                    </li>
+                    
+                </ul>
+                    
+                   
+                </div>
+                <hr>
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/">Go Back &rarr;</a>
+                    </li>
+                    
+                </ul>
